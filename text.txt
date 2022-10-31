@@ -1,1 +1,0 @@
- Animal: 23, view: 23
