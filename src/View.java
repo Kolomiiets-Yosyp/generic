@@ -15,12 +15,4 @@ public class View<T> extends Animal{
         super(view);
         this.Breed = breed;
     }
-
-    public T getBreed() {
-        return Breed;
-    }
-
-    public void setBreed(T breed) {
-        this.Breed = breed;
-    }
 }

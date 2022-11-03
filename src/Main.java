@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.nio.CharBuffer;
 import java.util.Scanner;
 public class Main {
-    static String arr[];
      static Scanner scanner = new Scanner(System.in);
     static Scanner scannerr = new Scanner(System.in);
     static String sca;
@@ -40,7 +39,7 @@ public class Main {
         FileWriter fileWriter = new FileWriter("text.txt");
 
         while (scan!=3){
-            System.out.println("----------------------- \nWrite number: \n 1.Add a new animal to the list"+
+            System.out.println("\nWrite number: \n 1.Add a new animal to the list"+
                     "\n 2.Output list of animals "+
                     "\n 3.Exit the program");
             scan = scannerr.nextInt();
@@ -56,7 +55,10 @@ public class Main {
                   fileWriter = new FileWriter("text.txt");
                     fileWriter.write(" Animal: " + viewScan + ", view: " + scannnnnnn+ "\n");
                 }
-
+                finally {
+                    System.out.println("----------------------------");
+                    fileWriter.write("--------------------------------\n");
+                }
                 break ;
                 case 2:
                     fileWriter.close();

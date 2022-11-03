@@ -12,11 +12,4 @@ public class Animal<T> {
                 '}';
     }
 
-    public T getView() {
-        return view;
-    }
-
-    public void setView(T view) {
-        this.view = view;
-    }
 }
